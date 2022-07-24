@@ -1,0 +1,66 @@
+<html>
+<title>الرئيسية  - الجامعة التقنية الوسطى</title>
+<link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+<script src="bootstrap/js/bootstrap.min.js" type="4c99a2c6149baca3d449a9f1-text/javascript"></script>
+<style>
+		.container{
+			margin-top:30px;
+			margin-bottom:30px;
+			padding:15px;
+			border-radius:5px;
+			background:#f2f2f2;
+			font-size:28px;
+			text-align:center;
+			color:#000;
+			font-weight:700;
+		}
+        .my_box{
+            background:#c9abab;
+            color:rgb(255, 255, 255);
+        }
+        .box2{
+            background: rgb(168, 214, 235);
+            margin-top:30px;
+        }
+</style>
+
+<body>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 col-md-offset-1 col-xs-4 col-xs-offset-1 my_box">
+                A
+            </div>
+
+            <div class="col-md-4 col-md-offset-2 col-xs-4 col-xs-offset-2  my_box">
+                B
+            </div>
+
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 box2">
+                <input type="text" class="form-control" placeholder="اكتب الاسم">
+                <input type="text" class="form-control" placeholder="write your email">
+                <input type="password" id="my_password" class="form-control" placeholder="write your password">
+                <button class="form-control btn btn-primary" onclick="show_password();">show password</button>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function show_password(){
+            var my_password = document.getElementById('my_password');
+            if(my_password.type == "password"){
+                my_password.type = "text";
+            }else{
+                my_password.type = "password";
+            }
+            //alert(my_password);
+        }
+    </script>
+</body>
+</html>
